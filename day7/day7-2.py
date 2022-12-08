@@ -5,6 +5,7 @@ def update_dir_totals(filesize, scoped_dirs):
         folder['total'] += filesize
 
 
+# this is super hacky and needs fixed but I got bored
 def find_del_dir(dir_tree, min_size, total=9999999999999999):
     # We don't check if total > min_size here because we *know* we are starting
     # the problem from the root of the filesystem that doesn't have enough space
